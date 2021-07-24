@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		14DAEDA626AC680B00683E6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAEDA526AC680B00683E6D /* AppDelegate.swift */; };
 		14DAEDA826AC680B00683E6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAEDA726AC680B00683E6D /* SceneDelegate.swift */; };
-		14DAEDAA26AC680B00683E6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAEDA926AC680B00683E6D /* ContentView.swift */; };
+		14DAEDAA26AC680B00683E6D /* ChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DAEDA926AC680B00683E6D /* ChecklistView.swift */; };
 		14DAEDAC26AC680D00683E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DAEDAB26AC680D00683E6D /* Assets.xcassets */; };
 		14DAEDAF26AC680D00683E6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DAEDAE26AC680D00683E6D /* Preview Assets.xcassets */; };
 		14DAEDB226AC680D00683E6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DAEDB026AC680D00683E6D /* LaunchScreen.storyboard */; };
+		14E50FB026AC8032006BF1D5 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50FAF26AC8032006BF1D5 /* ChecklistItem.swift */; };
+		14E50FB326AC8092006BF1D5 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50FB226AC8092006BF1D5 /* Checklist.swift */; };
+		14E50FB626AC8483006BF1D5 /* EditChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50FB526AC8483006BF1D5 /* EditChecklistItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14DAEDA226AC680B00683E6D /* CheckListsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckListsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DAEDA526AC680B00683E6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14DAEDA726AC680B00683E6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14DAEDA926AC680B00683E6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14DAEDA926AC680B00683E6D /* ChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistView.swift; sourceTree = "<group>"; };
 		14DAEDAB26AC680D00683E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14DAEDAE26AC680D00683E6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14DAEDB126AC680D00683E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14DAEDB326AC680D00683E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E50FAF26AC8032006BF1D5 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
+		14E50FB226AC8092006BF1D5 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		14E50FB526AC8483006BF1D5 /* EditChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditChecklistItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,9 @@
 		14DAEDA426AC680B00683E6D /* CheckListsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				14E50FB126AC807E006BF1D5 /* MVVM */,
 				14DAEDA526AC680B00683E6D /* AppDelegate.swift */,
 				14DAEDA726AC680B00683E6D /* SceneDelegate.swift */,
-				14DAEDA926AC680B00683E6D /* ContentView.swift */,
 				14DAEDAB26AC680D00683E6D /* Assets.xcassets */,
 				14DAEDB026AC680D00683E6D /* LaunchScreen.storyboard */,
 				14DAEDB326AC680D00683E6D /* Info.plist */,
@@ -73,6 +79,33 @@
 				14DAEDAE26AC680D00683E6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14E50FB126AC807E006BF1D5 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				14E50FB726AC84CF006BF1D5 /* MainScene */,
+				14E50FB426AC846F006BF1D5 /* Edit */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		14E50FB426AC846F006BF1D5 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				14E50FB526AC8483006BF1D5 /* EditChecklistItemView.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		14E50FB726AC84CF006BF1D5 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				14E50FAF26AC8032006BF1D5 /* ChecklistItem.swift */,
+				14DAEDA926AC680B00683E6D /* ChecklistView.swift */,
+				14E50FB226AC8092006BF1D5 /* Checklist.swift */,
+			);
+			path = MainScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +180,10 @@
 			files = (
 				14DAEDA626AC680B00683E6D /* AppDelegate.swift in Sources */,
 				14DAEDA826AC680B00683E6D /* SceneDelegate.swift in Sources */,
-				14DAEDAA26AC680B00683E6D /* ContentView.swift in Sources */,
+				14E50FB326AC8092006BF1D5 /* Checklist.swift in Sources */,
+				14DAEDAA26AC680B00683E6D /* ChecklistView.swift in Sources */,
+				14E50FB626AC8483006BF1D5 /* EditChecklistItemView.swift in Sources */,
+				14E50FB026AC8032006BF1D5 /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
