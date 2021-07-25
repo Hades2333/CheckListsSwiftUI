@@ -29,5 +29,4 @@ class Checklist: ObservableObject {
         items.move(fromOffsets: whichElement, toOffset:
                                 destination)
     }
-
 }

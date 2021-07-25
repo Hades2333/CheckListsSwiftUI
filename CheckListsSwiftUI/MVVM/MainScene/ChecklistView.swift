@@ -13,6 +13,10 @@ struct CheckListView: View {
 
     @ObservedObject var checklist = Checklist()
 
+    // MARK: Properties
+
+    @State var newChecklistItemViewIsVisible = false
+
     // MARK: View
     
     var body: some View {
@@ -35,9 +39,18 @@ struct CheckListView: View {
                 .onDelete(perform: checklist.deleteListItem)
                 .onMove(perform: checklist.moveListItem)
             }
-            .navigationBarItems(trailing: EditButton())
             .navigationBarTitle("CheckList")
+            .navigationBarItems(leading: Button(action: { self.newChecklistItemViewIsVisible = true })
+            {
+                HStack {
+                    Image(systemName: "plus.circle.fill")
+                    Text("Add item")
+                }
+            }, trailing: EditButton())
         }
+        .sheet(isPresented: $newChecklistItemViewIsVisible) {
+            NewChecklistItemView(checklist: self.checklist)
+       }
     }
 }
 

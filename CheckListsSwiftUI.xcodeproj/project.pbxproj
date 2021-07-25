@@ -16,6 +16,7 @@
 		14E50FB026AC8032006BF1D5 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50FAF26AC8032006BF1D5 /* ChecklistItem.swift */; };
 		14E50FB326AC8092006BF1D5 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50FB226AC8092006BF1D5 /* Checklist.swift */; };
 		14E50FB626AC8483006BF1D5 /* EditChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50FB526AC8483006BF1D5 /* EditChecklistItemView.swift */; };
+		14E50FBA26AD3AD1006BF1D5 /* NewChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E50FB926AD3AD1006BF1D5 /* NewChecklistItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		14E50FAF26AC8032006BF1D5 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		14E50FB226AC8092006BF1D5 /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		14E50FB526AC8483006BF1D5 /* EditChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditChecklistItemView.swift; sourceTree = "<group>"; };
+		14E50FB926AD3AD1006BF1D5 /* NewChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChecklistItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				14E50FB726AC84CF006BF1D5 /* MainScene */,
 				14E50FB426AC846F006BF1D5 /* Edit */,
+				14E50FB826AD3AC4006BF1D5 /* New */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -106,6 +109,14 @@
 				14E50FB226AC8092006BF1D5 /* Checklist.swift */,
 			);
 			path = MainScene;
+			sourceTree = "<group>";
+		};
+		14E50FB826AD3AC4006BF1D5 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				14E50FB926AD3AD1006BF1D5 /* NewChecklistItemView.swift */,
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				14E50FB326AC8092006BF1D5 /* Checklist.swift in Sources */,
 				14DAEDAA26AC680B00683E6D /* ChecklistView.swift in Sources */,
 				14E50FB626AC8483006BF1D5 /* EditChecklistItemView.swift in Sources */,
+				14E50FBA26AD3AD1006BF1D5 /* NewChecklistItemView.swift in Sources */,
 				14E50FB026AC8032006BF1D5 /* ChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
